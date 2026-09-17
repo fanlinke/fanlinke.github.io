@@ -21,8 +21,8 @@ short_bio_text_justify: true
 short_bio: >-
   <p>
     I am an undergraduate student in <strong>Computer Science and Technology</strong> at
-    <strong>Tongji University</strong>, Shanghai, expecting to graduate in June 2027
-    (GPA 85.04 / 100). My interests sit between <strong>data and cloud-native systems</strong> and
+    <strong>Tongji University</strong>, Shanghai, expecting to graduate in June 2027.
+    My interests sit between <strong>data and cloud-native systems</strong> and
     <strong>applied machine learning</strong>: I enjoy taking a complicated system apart until its
     structure is clear, and then building it back so that it is measurable, verifiable and reliable.
   </p>
@@ -43,9 +43,7 @@ education:
 - name: Tongji University
   logo: /assets/images/badges/tju.svg
   dept: School of Computer Science and Technology
-  position: >-
-    B.Eng. in Computer Science and Technology <br/>
-    GPA 85.04 / 100
+  position: B.Eng. in Computer Science and Technology
   date: Sep. 2023 - Jun. 2027
 
 experience:

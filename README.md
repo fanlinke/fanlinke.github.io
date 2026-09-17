@@ -19,20 +19,23 @@ Personal homepage of **Linke Fan**, built with the
 | `_data/authors.yml` | Author formatting for publication lists (bold = you) |
 | `_publications/2026/` | One Markdown file per paper |
 | `_news/` | One Markdown file per news item |
-| `assets/files/CV_Linke_Fan.pdf` | The CV linked from the home page |
+| `assets/files/CV_Linke_Fan.pdf` | The CV linked from the home page (exported from `樊林珂-CV-2026.9.14docx.pdf`) |
+| `assets/images/photos/portrait.jpg` | Profile photo shown on the home page (from `证件照2.jpg`) |
+| `assets/images/favicon.svg` | Browser tab icon (an "LF" monogram) |
 | `assets/images/badges/tju.svg` | Placeholder university badge — replace it with the official logo if you like |
 
 ## Things that are intentionally left open
 
 1. **Project repository links.** Every entry in `_data/projects.yml` has `repo: ""`.
    Put the GitHub URL there when a repository becomes public and the `[Code]` link
-   appears automatically on both the home page and `/projects`.
-2. **Portrait photo.** To show a photo on the home page, drop an image into
-   `assets/images/photos/` and add a `portrait_url:` line to `_data/profile.yml`.
+   appears automatically on both the home page and `/projects`. The MiniOB entry
+   already points at `fanlinke/miniob-2023`.
+2. **Portrait photo.** The current photo is `assets/images/photos/portrait.jpg`.
+   To swap it, overwrite that file (roughly 3:4, ~600 px on the long edge works well).
 3. **Google Scholar / LinkedIn / ORCID.** There are commented-out lines in
    `_data/profile.yml`; uncomment and fill them in to add the icons.
-4. **Chinese name.** If you want the Chinese name next to "Linke Fan" everywhere,
-   fill in `secondary_name:` in `_data/profile.yml`.
+4. **Chinese name.** `secondary_name: "樊林珂"` is set in `_data/profile.yml` and appears
+   next to "Linke Fan" on the home page.
 
 ## Preview locally
 

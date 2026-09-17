@@ -1,0 +1,378 @@
+---
+layout: default
+title : Experience
+navbar_title: Experience
+---
+
+<div class="row">
+    <div class="col-12">
+        <h1 class="pt-4">Experience</h1>
+        <p class="text-muted">
+            Education, research, internships and campus work, in reverse chronological order.
+            A one-page PDF version is available as
+            <a href="{{ site.data.profile.cv_link | relative_url }}" target="_blank">Curriculum Vitae</a>.
+        </p>
+    </div>
+</div>
+
+<!-- ============================== Education ============================== -->
+<div class="row">
+    <div class="col-12">
+        <div class="card border-0 shadow-sm bg-white mb-4">
+            <div class="card-body p-4">
+                <h4 class="mb-3"><i class="fas fa-graduation-cap"></i> Education</h4>
+
+                <div class="d-flex flex-wrap align-items-baseline">
+                    <div class="h5 mb-0 mr-3">Tongji University</div>
+                    <div class="ml-auto text-muted small no-break"><em>Sep. 2023 - Jun. 2027 (expected)</em></div>
+                </div>
+                <div class="small text-muted">
+                    School of Computer Science and Technology &middot; Shanghai, China &middot; Project 985 / 211 university
+                </div>
+                <div class="mt-2">
+                    <strong>B.Eng. in Computer Science and Technology</strong>,
+                    <span class="text-muted">GPA 85.04 / 100</span>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-md-4">
+                        <div class="small font-weight-bold">AI &amp; Data Science</div>
+                        <ul class="small pl-4 mb-2">
+                            <li>Machine Learning (B)</li>
+                            <li>Artificial Intelligence (B)</li>
+                            <li>Chinese Information Processing (A)</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="small font-weight-bold">Systems &amp; Algorithms</div>
+                        <ul class="small pl-4 mb-2">
+                            <li>Compilers (A)</li>
+                            <li>Computer Organization (A)</li>
+                            <li>Algorithm Design and Analysis (B)</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="small font-weight-bold">Software &amp; Practicums</div>
+                        <ul class="small pl-4 mb-2">
+                            <li>Database System Practicum (A)</li>
+                            <li>Operating System Practicum (A)</li>
+                            <li>Human Computer Interaction (A)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ============================== Research ============================== -->
+<div class="row">
+    <div class="col-12">
+        <div class="card border-0 shadow-sm bg-white mb-4">
+            <div class="card-body p-4">
+                <h4 class="mb-3"><i class="fas fa-flask"></i> Research Experience</h4>
+
+                <div class="d-flex flex-wrap align-items-baseline">
+                    <div class="h5 mb-0 mr-3">
+                        CausIDL: Resource Competition-Aware Causal Graph Discovery for Deep Learning Microservices
+                    </div>
+                    <div class="ml-auto text-muted small no-break"><em>Sep. 2025 - Jun. 2026</em></div>
+                </div>
+                <div class="small text-muted">
+                    Individual research project &middot; advised by Prof. Zhijun Ding, Tongji University
+                </div>
+                <ul class="small mt-2 mb-4 pl-4">
+                    <li class="mb-1">
+                        Modeled causality at the <strong>individual service-instance level</strong>, using resource metrics
+                        (GPU/CPU utilization, memory bandwidth, GPU memory) together with performance metrics
+                        (request volume, error rate, latency), rather than assuming that all instances of a service type
+                        behave alike.
+                    </li>
+                    <li class="mb-1">
+                        Introduced node-level aggregate metrics as <strong>shared parents</strong>, so that indirect resource
+                        competition between instances sharing a physical node becomes an explicit mediation path and is not
+                        mistaken for a direct causal edge between instances.
+                    </li>
+                    <li class="mb-1">
+                        Encoded GPU hardware characteristics, container isolation principles and inference service workflows
+                        into a <strong>forbidden-edge list</strong>, shrinking the causal search space by more than 20% and
+                        excluding physically invalid directions.
+                    </li>
+                    <li class="mb-1">
+                        Built a <strong>semi-automated validation loop</strong> that checks learned edges against hardware logic
+                        and service workflows; violating edges are added to the forbidden list and the algorithm is re-run,
+                        which iteratively improves graph quality.
+                    </li>
+                </ul>
+
+                <hr />
+
+                <div class="d-flex flex-wrap align-items-baseline">
+                    <div class="h5 mb-0 mr-3">Serverless End-to-End Automated AI Workflow System</div>
+                    <div class="ml-auto text-muted small no-break"><em>Dec. 2023 - Dec. 2024</em></div>
+                </div>
+                <div class="small text-muted">
+                    Individual research project &middot; advised by Prof. Zhijun Ding, Tongji University
+                </div>
+                <ul class="small mt-2 mb-0 pl-4">
+                    <li class="mb-1">
+                        Designed the overall architecture of a serverless AI workflow platform based on
+                        <strong>Knative</strong> and <strong>Argo</strong>, and built an in-browser AI code editor where users write
+                        training / inference code templates, run them and get results back.
+                    </li>
+                    <li class="mb-1">
+                        Implemented a <strong>function-level code parser</strong> that identifies inter-function dependencies and
+                        produces a directed acyclic computation graph, with test cases for nested and anonymous functions and
+                        traceable logs for each dependency.
+                    </li>
+                    <li class="mb-1">
+                        Integrated the Argo deployment / runtime engine and the data scheduling aggregator in the Knative
+                        environment; monitored Pods with <strong>Kubernetes and Prometheus</strong> and visualized live workflow
+                        metrics in the frontend, reaching a 20% reduction in workflow deployment time in later test rounds.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ============================== Internships ============================== -->
+<div class="row">
+    <div class="col-12">
+        <div class="card border-0 shadow-sm bg-white mb-4">
+            <div class="card-body p-4">
+                <h4 class="mb-3"><i class="fas fa-briefcase"></i> Internships</h4>
+
+                <div class="d-flex flex-wrap align-items-baseline">
+                    <div class="h5 mb-0 mr-3">JD Technology (JD Cloud)</div>
+                    <div class="ml-auto text-muted small no-break"><em>Aug. 2025 - Sep. 2025</em></div>
+                </div>
+                <div class="small text-muted">
+                    Software Development Intern &middot; core project: end-to-end data migration for the JD Cloud data lake
+                </div>
+                <ul class="small mt-2 mb-4 pl-4">
+                    <li class="mb-1">
+                        Developed automated <strong>migration scripts</strong> that handle differences in table schemas,
+                        Parquet / ORC data formats, partitioning strategies and storage engines; completed the three-level
+                        mapping from source table schemas to the target Catalog / Schema / Table, redesigned partition keys and
+                        performed lossless format conversion, migrating <strong>80+ tables (30TB+) with 100% data consistency</strong>
+                        and unblocking 20+ downstream business tasks.
+                    </li>
+                    <li class="mb-1">
+                        Tuned <strong>Spark / Hive</strong> performance by reading execution-plan logs and using
+                        <code>EXPLAIN</code> to locate slow-query bottlenecks; resolved a data-skew hotspot that overloaded a single
+                        Reducer by adjusting bucketing keys and introducing random prefixes to scatter hot keys, cutting a query
+                        from over 3 minutes to under 20 seconds (about 90% faster) and lowering cluster resource usage.
+                    </li>
+                    <li class="mb-1">
+                        Set up the <strong>cloud environment</strong> (runtime environments, databases and tables) and validated data
+                        integrity by running queries on cloud servers; coordinated permission management, security groups and VPC
+                        network policies &mdash; including network ACLs, sub-user authorization, user groups and role authorization &mdash;
+                        so that the migration link was reachable and the data correct.
+                    </li>
+                    <li class="mb-1">
+                        <strong>Localized migration failures</strong> layer by layer across source-side networking, target-side
+                        permissions and script logic; documented symptoms and workarounds for the data-source team, platform
+                        operations and business acceptance, and generated traceable logs for dependencies.
+                    </li>
+                </ul>
+
+                <hr />
+
+                <div class="d-flex flex-wrap align-items-baseline">
+                    <div class="h5 mb-0 mr-3">Qihoo 360 (Beijing Qihu Ceteng Security Technology)</div>
+                    <div class="ml-auto text-muted small no-break"><em>Jul. 2025</em></div>
+                </div>
+                <div class="small text-muted">Pre-sales Technical Intern</div>
+                <ul class="small mt-2 mb-4 pl-4">
+                    <li class="mb-1">
+                        Joined customer interviews and translated business requirements (intranet security, MLPS compliance,
+                        data-leakage prevention) into technical specifications for <strong>DLP endpoint control, UEBA behaviour
+                        analytics and database auditing</strong>, designing tailored security solutions for 5 client scenarios.
+                    </li>
+                    <li class="mb-1">
+                        Compiled 10+ competitive analysis reports and technical comparison matrices to support proposal
+                        writing, and turned technical terminology into customer-facing language for presentations.
+                    </li>
+                </ul>
+
+                <hr />
+
+                <div class="d-flex flex-wrap align-items-baseline">
+                    <div class="h5 mb-0 mr-3">CCB Fintech Co., Ltd.</div>
+                    <div class="ml-auto text-muted small no-break"><em>Jul. 2024</em></div>
+                </div>
+                <div class="small text-muted">
+                    Intern, Production and Technology Committee Office
+                </div>
+                <ul class="small mt-2 mb-0 pl-4">
+                    <li class="mb-1">
+                        Investigated and documented <strong>30+ production security incidents</strong>, tracing the causal chain
+                        from technical symptom to business impact through change records, confirmation with developers and
+                        business monitoring dashboards.
+                    </li>
+                    <li class="mb-1">
+                        Took part in 10+ reviews of core system designs and contributed to the production-safety retrospective
+                        process, working inside a financial-grade reliability loop of design review, canary release,
+                        monitoring and alerting, and emergency rollback.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ============================== Social practice ============================== -->
+<div class="row">
+    <div class="col-12">
+        <div class="card border-0 shadow-sm bg-white mb-4">
+            <div class="card-body p-4">
+                <h4 class="mb-3"><i class="fas fa-users"></i> Social Practice</h4>
+
+                <div class="d-flex flex-wrap align-items-baseline">
+                    <div class="h5 mb-0 mr-3">Tencent Kaiwu AI Platform, Professional Practice</div>
+                    <div class="ml-auto text-muted small no-break"><em>Jul. 2026 - Aug. 2026</em></div>
+                </div>
+                <div class="small text-muted">Core member</div>
+                <ul class="small mt-2 mb-4 pl-4">
+                    <li class="mb-1">
+                        Ran reinforcement learning experiments on the Kaiwu platform, learning reward-function design
+                        principles and hyperparameter tuning mechanisms in practice.
+                    </li>
+                    <li class="mb-1">
+                        After a knowledge-base construction exercise, AI-assisted literature parsing and multi-model dialogue
+                        generation, wrote the report <em>Ethical Dilemmas and Security Defenses in the Development of
+                        Artificial Intelligence</em>.
+                    </li>
+                </ul>
+
+                <hr />
+
+                <div class="d-flex flex-wrap align-items-baseline">
+                    <div class="h5 mb-0 mr-3">Summer Social Practice Project</div>
+                    <div class="ml-auto text-muted small no-break"><em>Jul. 2024 - Aug. 2024</em></div>
+                </div>
+                <div class="small text-muted">Project leader</div>
+                <ul class="small mt-2 mb-0 pl-4">
+                    <li class="mb-1">
+                        Managed the full project life cycle and organizational implementation &mdash; selecting and coordinating
+                        practice locations, contacting interviewees and planning practice content &mdash; and was responsible for
+                        organizing the post-research data.
+                    </li>
+                    <li class="mb-1">
+                        The project was recognized as an <strong>Excellent Exhibition Project</strong> by the university.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ============================== Campus / extracurricular ============================== -->
+<div class="row">
+    <div class="col-12">
+        <div class="card border-0 shadow-sm bg-white mb-4">
+            <div class="card-body p-4">
+                <h4 class="mb-3"><i class="fas fa-university"></i> Campus Activities</h4>
+                <ul class="small mb-0 pl-4">
+                    <li class="mb-1">
+                        <strong>Director</strong>, Organization Department, Youth League Committee, School of Computer Science
+                        and Technology, Tongji University &mdash; <em>Sep. 2025 - Sep. 2026</em>
+                    </li>
+                    <li class="mb-1">
+                        <strong>Director</strong>, Basketball Association, Tongji University Jiading Campus &mdash;
+                        <em>Sep. 2025 - Sep. 2026</em>
+                    </li>
+                    <li class="mb-1">
+                        <strong>Student Assistant</strong>, Student Affairs Office, School of Computer Science and Technology,
+                        Tongji University &mdash; <em>Mar. 2025 - Jul. 2025</em>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ============================== Skills ============================== -->
+<div class="row">
+    <div class="col-12">
+        <div class="card border-0 shadow-sm bg-white mb-4">
+            <div class="card-body p-4">
+                <h4 class="mb-3"><i class="fas fa-tools"></i> Skills</h4>
+
+                <div class="row small">
+                    <div class="col-md-3 font-weight-bold">Programming Languages</div>
+                    <div class="col-md-9 mb-2">
+                        <span class="badge badge-light border mr-1">Python</span>
+                        <span class="badge badge-light border mr-1">C++</span>
+                        <span class="badge badge-light border mr-1">SQL</span>
+                    </div>
+
+                    <div class="col-md-3 font-weight-bold">Data &amp; Cloud-Native Systems</div>
+                    <div class="col-md-9 mb-2">
+                        <span class="badge badge-light border mr-1">Spark</span>
+                        <span class="badge badge-light border mr-1">Hive</span>
+                        <span class="badge badge-light border mr-1">Kubernetes</span>
+                        <span class="badge badge-light border mr-1">Knative</span>
+                        <span class="badge badge-light border mr-1">Argo</span>
+                        <span class="badge badge-light border mr-1">Prometheus</span>
+                        <span class="badge badge-light border mr-1">Linux</span>
+                        <span class="badge badge-light border mr-1">Git</span>
+                        <span class="badge badge-light border mr-1">CMake</span>
+                    </div>
+
+                    <div class="col-md-3 font-weight-bold">ML / DL Frameworks</div>
+                    <div class="col-md-9 mb-2">
+                        <span class="badge badge-light border mr-1">PyTorch</span>
+                        <span class="badge badge-light border mr-1">NumPy</span>
+                        <span class="badge badge-light border mr-1">Pandas</span>
+                    </div>
+
+                    <div class="col-md-3 font-weight-bold">Methods &amp; Domains</div>
+                    <div class="col-md-9 mb-2">
+                        <span class="badge badge-light border mr-1">Machine Learning</span>
+                        <span class="badge badge-light border mr-1">Deep Learning</span>
+                        <span class="badge badge-light border mr-1">Transformer / Attention</span>
+                        <span class="badge badge-light border mr-1">Reinforcement Learning</span>
+                        <span class="badge badge-light border mr-1">NLP</span>
+                        <span class="badge badge-light border mr-1">Medical Image Segmentation</span>
+                        <span class="badge badge-light border mr-1">Causal Graph Discovery</span>
+                    </div>
+
+                    <div class="col-md-3 font-weight-bold">Languages</div>
+                    <div class="col-md-9 mb-2">
+                        <span class="badge badge-light border mr-1">Chinese (native)</span>
+                        <span class="badge badge-light border mr-1">English (IELTS 7.5)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ============================== Honors ============================== -->
+<div class="row">
+    <div class="col-12">
+        <div class="card border-0 shadow-sm bg-white mb-4">
+            <div class="card-body p-4">
+                <h4 class="mb-3"><i class="fas fa-award"></i> Honors &amp; Awards</h4>
+                <ul class="small mb-0 pl-4">
+                    <li class="mb-1">
+                        Excellent Exhibition Project, Summer Social Practice, Tongji University &mdash;
+                        <em>2024</em>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <p class="text-muted small">
+            You can also download the one-page
+            <a href="{{ site.data.profile.cv_link | relative_url }}" target="_blank"><i class="fas fa-file-alt"></i> Curriculum Vitae</a>
+            for the condensed version.
+        </p>
+    </div>
+</div>

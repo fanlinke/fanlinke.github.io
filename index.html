@@ -1,0 +1,76 @@
+---
+layout: default
+title : Homepage
+navbar_title: Home
+---
+
+<div class="row">
+    <div class="col-lg-3 col-md-4">
+        {% include widgets/profile_card_mini.html %}
+    </div>
+    <div class="col-lg-9 col-md-8">
+
+        {% include widgets/profile_card_bio_only.html %}
+
+        {% if site.data.display.homepage.show_experience %}
+            {% include widgets/experience_card.html %}
+        {% endif %}
+
+        {% if site.data.display.homepage.show_news %}
+        {% assign count_news = site.news | size %}
+        {% if count_news > 0 %}
+        {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
+        {% endif %}
+        {% endif %}
+
+        {% if site.data.display.homepage.show_selected_publications %}
+        {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
+        {% assign num_pubs = pubs | size %}
+        {% if num_pubs > 0 %}
+        {%
+        include widgets/publication_card.html
+        publications=pubs
+        title='<i class="fas fa-star"></i> Selected Publications'
+        %}
+        {% endif %}
+        {% endif %}
+
+        {% assign projects = site.data.projects | where: "selected", true %}
+        {% assign num_projects = projects | size %}
+        {% if num_projects > 0 %}
+        <div class="my-3 p-0 bg-white shadow-sm rounded-xl">
+            <h6 class="border-bottom border-gray p-3 mb-0">
+                <i class="fas fa-code-branch"></i> Selected Projects
+                <a href="{{ 'projects' | relative_url }}">(view all <i class="fas fa-angle-double-right"></i>)</a>
+            </h6>
+            {% for project in projects %}
+            <div class="p-3 border-bottom border-gray">
+                <div class="d-flex flex-wrap">
+                    <div class="font-weight-bold">{{ project.name }}</div>
+                    <div class="ml-auto text-muted small no-break"><em>{{ project.period }}</em></div>
+                </div>
+                <div class="small text-muted">{{ project.role }}</div>
+                <div class="mt-1">{{ project.summary }}</div>
+                <div class="mt-2">
+                    {% for t in project.tech %}<span class="badge badge-light border mr-1">{{ t }}</span>{% endfor %}
+                </div>
+                <div class="small mt-2">
+                    <a href="{{ 'projects' | relative_url }}">Learn more <i class="fas fa-angle-double-right"></i></a>
+                    {% for link in project.links %}
+                    {% if link[1] and link[1] != "" %}
+                    <a class="ml-2" target="_blank" href="{{ link[1] }}">[{{ link[0] }}]</a>
+                    {% endif %}
+                    {% endfor %}
+                    {% if project.repo and project.repo != "" %}
+                    <a class="ml-2" target="_blank" href="{{ project.repo }}">[Code]</a>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+            <h6 class="d-block p-3 mt-0 text-right">
+                <a href="{{ 'projects' | relative_url }}">All projects <i class="fas fa-angle-double-right"></i></a>
+            </h6>
+        </div>
+        {% endif %}
+    </div>
+</div>

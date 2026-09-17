@@ -1,0 +1,68 @@
+primary_name: "Linke Fan"
+secondary_name: ""
+navbar_name: "Linke Fan"
+
+positions:
+- name: B.Eng. Student in Computer Science and Technology
+- name: Tongji University, Shanghai, China
+  logo: /assets/images/badges/tju.svg
+
+email: "fanlinke_27ty@163.com"
+cv_link: /assets/files/CV_Linke_Fan.pdf
+github: fanlinke
+# gscholar: <your-google-scholar-id>   # add this once you have a Scholar profile
+# linkedin: <your-linkedin-id>
+# orcid: 0000-0000-0000-0000
+
+short_bio_text_justify: true
+short_bio: >-
+  <p>
+    I am an undergraduate student in <strong>Computer Science and Technology</strong> at
+    <strong>Tongji University</strong>, Shanghai, expecting to graduate in June 2027
+    (GPA 85.04 / 100). My interests sit between <strong>data and cloud-native systems</strong> and
+    <strong>applied machine learning</strong>: I enjoy taking a complicated system apart until its
+    structure is clear, and then building it back so that it is measurable, verifiable and reliable.
+  </p>
+  <p>
+    Right now I am working on <strong>FSB-Net</strong>, a frequency&ndash;spatial boundary network for brain stroke
+    lesion segmentation in non-contrast CT (accepted at IEEE BIBM 2026, CCF-B), and on
+    <strong>CausIDL</strong>, resource-competition-aware causal graph discovery for deep learning
+    microservices. I have also spent time as an engineering intern at
+    <strong>JD Technology (JD Cloud)</strong>, where I built migration tooling for a data lake project,
+    and at <strong>CCB Fintech</strong> and <strong>Qihoo 360</strong>.
+  </p>
+  <p>
+    I am happy to talk about systems, data engineering, medical image analysis or research in general &mdash;
+    the fastest way to reach me is email.
+  </p>
+
+education:
+- name: Tongji University
+  logo: /assets/images/badges/tju.svg
+  dept: School of Computer Science and Technology
+  position: >-
+    B.Eng. in Computer Science and Technology <br/>
+    GPA 85.04 / 100
+  date: Sep. 2023 - Jun. 2027
+
+experience:
+- name: Tongji University
+  dept: Undergraduate research, advised by Prof. Zhijun Ding
+  position: Undergraduate Researcher
+  date: Sep. 2025 - Jun. 2026
+- name: JD Technology (JD Cloud)
+  dept: Data lake and platform engineering
+  position: Software Development Intern
+  date: Aug. 2025 - Sep. 2025
+- name: Qihoo 360 (Beijing Qihu Ceteng Security Technology)
+  dept: Pre-sales technical solutions
+  position: Technical Intern
+  date: Jul. 2025
+- name: CCB Fintech Co., Ltd.
+  dept: Production and Technology Committee Office
+  position: Intern
+  date: Jul. 2024
+
+awards:
+- name: Excellent Exhibition Project, Summer Social Practice, Tongji University
+  date: 2024

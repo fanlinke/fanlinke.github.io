@@ -1,0 +1,71 @@
+# Projects shown on /projects and (the `selected: true` ones) on the homepage.
+#
+# `repo` is left empty on purpose for now: as soon as a repository is public,
+# put its URL here and the "Code" link will appear automatically.
+
+- name: "FSB-Net: Frequency-Spatial Boundary Network for Brain Stroke Lesion Segmentation"
+  subtitle: "Undergraduate research project &middot; accepted at IEEE BIBM 2026 (CCF-B)"
+  role: "First author (equal contribution)"
+  period: "Jan. 2026 - Jul. 2026"
+  selected: true
+  summary: >-
+    A segmentation network for brain stroke lesions in non-contrast CT that fuses frequency-domain boundary
+    evidence with spatial features. A wavelet-based boundary detection head, a frequency-spatial cross-attention
+    module and a spectral boundary loss work together to recover lesion borders that plain spatial decoders blur out.
+  highlights:
+    - "Designed the overall architecture and implemented the network on a PVTv2 encoder-decoder baseline, introducing wavelet decomposition for high-frequency boundary cues and bidirectional frequency-spatial interaction."
+    - "Built the Wavelet Boundary Detection Head (WBDH): multi-scale encoder features are decomposed by DWT into low-frequency approximation and horizontal / vertical / diagonal detail, with learnable threshold gating suppressing low-amplitude high-frequency noise."
+    - "Designed Frequency-Spatial Cross-Attention (FSCAM), which queries boundary features with spatial features, and used a schedule in which spatial features dominate early and the bidirectional pathway opens once training stabilizes."
+    - "Formulated the Spectral Boundary Loss (SBL) to penalize high-frequency discrepancies between predictions and labels in the Fourier domain, combined with Dice, BCE, SSIM, deep supervision and an FPN decoder."
+    - "Ran the ablations: compared morphological gradient, Canny, HED-style side outputs and Haar DWT, and showed that bidirectional cross-attention beat concatenation, addition, residual gating and unidirectional attention, with SBL and SSIM as complementary terms."
+  tech: ["PyTorch", "Medical Image Segmentation", "Wavelet Transform", "Cross-Attention", "Deep Supervision"]
+  repo: ""
+  links:
+    arXiv: https://arxiv.org/abs/2607.20955
+
+- name: "CausIDL: Resource Competition-Aware Causal Graph Discovery for Deep Learning Microservices"
+  subtitle: "Individual research project, advised by Prof. Zhijun Ding"
+  role: "Undergraduate researcher"
+  period: "Sep. 2025 - Jun. 2026"
+  selected: true
+  summary: >-
+    Causal graph discovery for deep learning microservices that treats every service instance as an individual
+    agent and explicitly separates application-layer calls from physical-layer resource competition.
+  highlights:
+    - "Modeled causality at the service-instance level with resource metrics (GPU/CPU utilization, memory bandwidth, GPU memory) and performance metrics (request volume, error rate, latency), instead of assuming all instances of a service type are homogeneous."
+    - "Introduced node-level aggregate metrics as shared parents so that indirect contention between instances co-located on the same physical node becomes an explicit mediation path."
+    - "Encoded GPU hardware characteristics, container isolation rules and inference workflow semantics into a forbidden-edge list, shrinking the causal search space by more than 20% and removing physically invalid directions."
+    - "Built a semi-automated validation loop that checks learned edges against hardware logic and service workflows; violating edges are appended to the forbidden list and the search is re-run, which iteratively improves graph quality."
+  tech: ["Causal Discovery", "Graph Learning", "GPU Telemetry", "Domain Constraints", "Python"]
+  repo: ""
+  links: {}
+
+- name: "Serverless End-to-End Automated AI Workflow System"
+  subtitle: "Individual research project, advised by Prof. Zhijun Ding"
+  role: "Undergraduate researcher"
+  period: "Dec. 2023 - Dec. 2024"
+  selected: false
+  summary: >-
+    A serverless platform for end-to-end AI workflows, built on Knative and Argo, with an in-browser editor
+    for writing, running and inspecting training and inference code templates.
+  highlights:
+    - "Designed the platform architecture and the browser-based AI code editor, so that a user can write a training or inference template, run it and read the result without any local setup."
+    - "Implemented a function-level code parser that extracts inter-function dependencies into a directed acyclic computation graph, with test cases for nested and anonymous functions and traceable logs for every dependency edge."
+    - "Integrated the Argo workflow engine and the data scheduling aggregator into the Knative environment, and monitored Pods with Kubernetes and Prometheus with frontend visualization of live workflow metrics; a later test round measured a 20% reduction in workflow deployment time."
+  tech: ["Knative", "Argo Workflows", "Kubernetes", "Prometheus", "AST Parsing", "Serverless"]
+  repo: ""
+  links: {}
+
+- name: "MiniOB: A Compact Relational Database Engine"
+  subtitle: "Course project based on the OceanBase MiniOB teaching database (OceanBase database competition)"
+  role: "Individual course project"
+  period: "2023 - 2024"
+  selected: false
+  summary: >-
+    Implemented core components of a small relational database engine in C++ on top of the OceanBase MiniOB
+    teaching codebase, to understand from the inside how storage, indexing, parsing and execution fit together.
+  highlights:
+    - "Worked through the engine layer by layer: record and buffer management, indexing, SQL parsing and the execution path, with the original MiniOB test suites as the acceptance criterion."
+  tech: ["C++", "SQL", "Database Internals", "CMake", "Linux"]
+  repo: ""
+  links: {}

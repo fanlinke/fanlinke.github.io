@@ -1,0 +1,16 @@
+# Site settings
+title: "Linke Fan"
+description: >-
+  Personal homepage of Linke Fan, an undergraduate in Computer Science and Technology
+  at Tongji University, working on database and cloud-native systems and applied machine learning.
+author: "Linke Fan"
+
+# The site is served from the root of https://fanlinke.github.io
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+
+collections:
+  - publications
+  - news

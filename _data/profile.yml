@@ -22,24 +22,21 @@ short_bio: >-
   <p>
     I am an undergraduate student in <strong>Computer Science and Technology</strong> at
     <strong>Tongji University</strong>, Shanghai, expecting to graduate in June 2027
-    (GPA 85.04 / 100, 4.0 / 5.0). My interests sit between <strong>data and cloud-native
-    systems</strong> and <strong>applied machine learning</strong>: I enjoy taking a complicated system
-    apart until its structure is clear, and then building it back so that it is measurable, verifiable
-    and reliable.
+    (GPA 85.04 / 100). My interests sit between <strong>data and cloud-native systems</strong> and
+    <strong>applied machine learning</strong>: I enjoy taking a complicated system apart until its
+    structure is clear, and then building it back so that it is measurable, verifiable and reliable.
   </p>
   <p>
     I am the first author of <strong>FSB-Net</strong>, a frequency&ndash;spatial boundary network for brain
-    stroke lesion segmentation in non-contrast CT (accepted at IEEE BIBM 2026, CCF-B), and I lead
-    <strong>CausIDL</strong>, resource-competition-aware causal graph discovery for deep learning
-    microservices. I have also worked as an intern at <strong>JD Technology (JD Cloud)</strong>, where I
-    built migration tooling for a data lake project, at <strong>QAX Technology Group</strong>, at the
-    <strong>Taiyuan Municipal People's Government</strong>, and at <strong>CCB Fintech</strong>.
+    stroke lesion segmentation in non-contrast CT (accepted at IEEE BIBM 2026, CCF-B), and I have worked
+    on <strong>CausIDL</strong>, resource-competition-aware causal graph discovery for deep learning
+    microservices. I have also spent time as an engineering intern at
+    <strong>JD Technology (JD Cloud)</strong>, where I built migration tooling for a data lake project,
+    and at <strong>CCB Fintech</strong> and <strong>Beijing Qihu Ceteng Security Technology</strong>.
   </p>
   <p>
-    In July 2025 I attended the Plenary Session on AI Development and Safety at the World Artificial
-    Intelligence Conference (WAIC) as a student representative. Outside the lab I play basketball
-    (Tongji university and school teams) and badminton. I am happy to talk about systems, data
-    engineering, medical image analysis or research in general &mdash; email is the fastest way to reach me.
+    I am happy to talk about systems, data engineering, medical image analysis or research in general &mdash;
+    the fastest way to reach me is email.
   </p>
 
 education:
@@ -48,33 +45,27 @@ education:
   dept: School of Computer Science and Technology
   position: >-
     B.Eng. in Computer Science and Technology <br/>
-    GPA 85.04 / 100 (4.0 / 5.0)
+    GPA 85.04 / 100
   date: Sep. 2023 - Jun. 2027
 
 experience:
 - name: Tongji University
-  dept: Undergraduate research (FSB-Net, CausIDL)
-  position: First author / Project lead
+  dept: Individual research projects, supervised by Prof. Zhijun Ding
+  position: Undergraduate Researcher
   date: Sep. 2025 - Jun. 2026
 - name: JD Technology (JD Cloud)
-  dept: IaaS Data Platform, Cloud Division
-  position: Data Platform R&D Intern
+  dept: Data lake and platform engineering
+  position: Software Development Intern
   date: Aug. 2025 - Sep. 2025
-- name: QAX Technology Group
-  dept: Pre-sales technical solutions, Bank Sales Division
+- name: Beijing Qihu Ceteng Security Technology Co., Ltd.
+  dept: Pre-sales technical solutions
   position: Pre-sales Technical Intern
-  date: Jul. 2025 - Aug. 2025
-- name: Taiyuan Municipal People's Government
-  dept: General Office, Secretariat
-  position: Intern
-  date: Jan. 2025 - Feb. 2025
+  date: Jul. 2025
 - name: CCB Fintech Co., Ltd.
   dept: Production and Technology Committee Office
   position: Intern
-  date: Jul. 2024 - Aug. 2024
+  date: Jul. 2024
 
 awards:
 - name: Excellent Exhibition Project, Summer Social Practice, Tongji University
   date: 2024
-- name: Outstanding Completion Certificate, Tongji University &times; Tencent Kaiwu AI Platform Professional Practice
-  date: 2026

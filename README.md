@@ -4,6 +4,9 @@ Personal homepage of **Linke Fan**, built with the
 [academic-homepage](https://github.com/luost26/academic-homepage) Jekyll template
 (MIT licensed, see `LICENSE`) and deployed with GitHub Pages.
 
+All content (education, research, internships, social practice, skills, awards) is taken from
+`CV_LinkeFan_第三版（林珂改）.pdf`, which is also the PDF linked as "Curriculum Vitae" on the site.
+
 ## What is in here
 
 | Path | What it is |
@@ -19,7 +22,7 @@ Personal homepage of **Linke Fan**, built with the
 | `_data/authors.yml` | Author formatting for publication lists (bold = you) |
 | `_publications/2026/` | One Markdown file per paper |
 | `_news/` | One Markdown file per news item |
-| `assets/files/CV_Linke_Fan.pdf` | The CV linked from the home page (exported from `樊林珂-CV-2026.9.14docx.pdf`) |
+| `assets/files/CV_Linke_Fan.pdf` | The CV linked from the home page (`CV_LinkeFan_第三版（林珂改）.pdf`) |
 | `assets/images/photos/portrait.jpg` | Profile photo shown on the home page (from `证件照2.jpg`) |
 | `assets/images/favicon.svg` | Browser tab icon (an "LF" monogram) |
 | `assets/images/badges/tju.svg` | Placeholder university badge — replace it with the official logo if you like |

@@ -65,3 +65,20 @@ branch `main`, folder `/ (root)`, and save. The site is published a minute or tw
 
 Template: [luost26/academic-homepage](https://github.com/luost26/academic-homepage) (MIT).
 The link in the page footer is kept as the template author asks.
+
+## Troubleshooting
+
+### `git push` hangs or `dial tcp ... i/o timeout` to github.com
+
+On this machine `github.com` resolves to `20.205.243.166`, which is unreachable from the
+local network, while other GitHub edge IPs (e.g. `140.82.112.3`) answer fine. If pushes
+start failing with a timeout, run the small CONNECT proxy in the workspace
+(`work/ghproxy.py`) and point git at it:
+
+```bash
+python3 /Users/fanlinke/Documents/Codex/2026-09-17/h-t-t/work/ghproxy.py &
+HTTPS_PROXY=http://127.0.0.1:9999 git -C /Users/fanlinke/Documents/Codex/2026-09-17/h-t-t/outputs/fanlinke.github.io push
+```
+
+The same env var makes `gh` work (`HTTPS_PROXY=http://127.0.0.1:9999 gh auth status`).
+This is a workaround for the network, not something the site needs.
